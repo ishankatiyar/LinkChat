@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
 const corsOption={
-    origin:['http://localhost:5173','https://linkchat-1vxy.onrender.com'], 
+    origin:['http://localhost:5173','https://linkchat-app.onrender.com'], 
     credentials:true 
 };  
 app.use(cors(corsOption)); 
