@@ -21,7 +21,7 @@ const Sidebar = () => {
 
   const logoutHandler = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/v1/user/logout`);
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/user/logout`);
       navigate("/login");
       toast.success(res.data.message);
       dispatch(setAuthUser(null));
@@ -46,9 +46,7 @@ const Sidebar = () => {
     }
   };
 
-  //     It filters otherUsers to find a user whose name includes the search query.
-  // If a match is found, it updates the Redux store with only that user.
-  // If no match is found, it shows a "User not found!" error message.
+  
   return (
     <div className="border-r border-slate-500 p-4 flex flex-col">
       <form

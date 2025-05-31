@@ -20,7 +20,7 @@ const Signup = () => {
     console.log(user);
     e.preventDefault(); 
     try {
-      const res = await axios.post(`http://localhost:8080/api/v1/user/register`, user, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/user/register`, user, {
         headers: {
           'Content-Type': 'application/json'
         },
