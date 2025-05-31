@@ -4,14 +4,7 @@ import { setSelectedUser } from '../redux/userSlice';
 
 const OtherUser = ({ user , key}) => {
 
-    // other way
-    //  const OtherUser = (props) => {
-    //     const user = props.user;
-
-// key is a special prop in React and is not passed to components.
-// If you need key, use the user._id directly.
-// If you must access key, pass it as a separate prop (e.g., userKey={user._id}).
-
+  
 
     const dispatch = useDispatch();
     const {selectedUser, onlineUsers} = useSelector(store=>store.user);

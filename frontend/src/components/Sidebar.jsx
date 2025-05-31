@@ -11,7 +11,6 @@ import {
   setSelectedUser,
 } from "../redux/userSlice";
 import { setMessages } from "../redux/messageSlice";
-// import { BASE_URL } from '..';
 
 const Sidebar = () => {
   const [search, setSearch] = useState("");
