@@ -8,7 +8,7 @@ import store from "./redux/store.js";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 
-let persistor = persistStore(store);
+let persistor = persistStore(store);   // It connects your Redux store to localStorage, even if the user refreshes the page, your Redux state stays saved.
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
