@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
 const corsOption={
-    origin:['http://localhost:5173','https://edunexus-the-lms-app.netlify.app'], 
+    origin:['http://localhost:5173','https://vocal-starburst-0f59f6.netlify.app/'], 
     credentials:true 
 };
 app.use(cors(corsOption)); 
